@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "MONGO_URL": "mongodb+srv://kumarhrithik8010:Hrx2000@cluster0.jsfaciy.mongodb.net/?retryWrites=true&w=majority"
+  }
+}
